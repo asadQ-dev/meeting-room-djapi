@@ -155,4 +155,4 @@ Current test coverage is minimal.
 
 ## License
 
-No license file is currently present in this repository.
+This project is not currently licensed.
