@@ -78,7 +78,7 @@ python manage.py runserver
 ### 5. Open the app
 
 - Django admin: `http://127.0.0.1:8000/admin/`
-- API base path: Placeholder
+- API base path: not implemented yet
 
 ## Available Commands
 
@@ -113,9 +113,9 @@ Current API implementation status:
 - URL routing: draft / incomplete
 - Tests: placeholder / incomplete
 
-### Planned Endpoints
+### Proposed Endpoints
 
-> Placeholder: update this section once `reservations/urls.py` and API views are finalized.
+> Placeholder: these are draft route ideas and are not implemented yet.
 
 - `GET /rooms/`
 - `POST /rooms/`
@@ -155,4 +155,4 @@ Current test coverage is minimal.
 
 ## License
 
-> Placeholder: add license information.
+No license file is currently present in this repository.
