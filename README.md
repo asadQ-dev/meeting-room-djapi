@@ -155,4 +155,4 @@ Current test coverage is minimal.
 
 ## License
 
-This project is not currently licensed.
+License is currently undecided. Until a LICENSE file is added, no license is granted for external use, modification, or distribution.
