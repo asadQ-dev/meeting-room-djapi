@@ -2,29 +2,45 @@
 
 ## Project Overview
 
-[Placeholder for project description]
+A Django REST API for managing meeting room bookings with time conflict detection to prevent double-booking.
 
 ## Features
 
-[Placeholder for features list]
+- Room management (create, view, update, delete)
+- Booking management with time conflict detection
+- RESTful API endpoints for all operations
+- Time-based booking validation to prevent overlaps
 
 ## Getting Started
 
 ### Prerequisites
 
-[Placeholder for prerequisites]
+- Python 3.8+
+- Django 4.0+
+- Django REST Framework
+- SQLite (for development)
 
 ### Installation
 
-[Placeholder for installation instructions]
+1. Clone the repository
+2. Create a virtual environment: `python -m venv venv`
+3. Activate the virtual environment
+4. Install dependencies: `pip install -r requirements.txt` (if exists)
+5. Run migrations: `python manage.py migrate`
 
 ### Setup
 
-[Placeholder for setup instructions]
+1. Create a superuser: `python manage.py createsuperuser`
+2. Start the development server: `python manage.py runserver`
+3. Access the admin interface at http://localhost:8000/admin/
 
 ## Usage
 
-[Placeholder for usage examples]
+The API provides endpoints for managing rooms and bookings:
+- `/api/rooms/` - List and create rooms
+- `/api/bookings/` - List and create bookings
+- `/api/rooms/{id}/` - Retrieve, update, or delete specific room
+- `/api/bookings/{id}/` - Retrieve, update, or delete specific booking
 
 ## API Endpoints
 
@@ -34,11 +50,17 @@
 
 ### Room Model
 
-[Placeholder for Room model details]
+Represents meeting rooms available for booking:
+- `name` (CharField): Name of the room
+- `capacity` (IntegerField): Maximum number of people the room can hold
 
 ### Booking Model
 
-[Placeholder for Booking model details]
+Represents booking reservations:
+- `room` (ForeignKey): Reference to the Room model
+- `booked_by` (CharField): Name/identifier of the person who made the booking
+- `start_time` (DateTimeField): Start time of the booking
+- `end_time` (DateTimeField): End time of the booking
 
 ## Contributing
 
