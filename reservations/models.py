@@ -6,7 +6,8 @@ class Room(models.Model):
 
 class Booking(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
-    booked_by = models.CharField(max_length=100) 
+    booked_by = models.CharField
+    attendees = models.PositiveIntegerField()
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
 

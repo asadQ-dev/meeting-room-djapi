@@ -107,16 +107,30 @@ This guide tracks the explicit execution layout needed to set up your directory,
 
 ---
 
-## 🎯 Master Progress Roadmap
-* [x] 1. Environment: Create & activate venv.
-* [x] 2. Install: pip install django djangorestframework.
-* [x] 3. Scaffold: Run startproject and startapp commands.
-* [x] 4. Register: Add "rest_framework" and "reservations" to settings.py.
-* [x] 5. Models: Define Room and Booking tables in models.py.
-* [x] 6. Track Plan: Run makemigrations in the terminal sandbox.
-* [x] 7. Migrate: Execute migrate to physically construct tables.
-* [ ] 8. Serializers Structure: Map models to base classes inside serializers.py.
-* [ ] 9. Custom Validation: Code time-overlap checks inside serializers.py.
-* [ ] 10. View Endpoints: Configure request controllers inside views.py.
-* [ ] 11. App Routing: Define target application endpoints in reservations/urls.py.
-* [ ] 12. Main Routing: Wire app entry gateways into config/urls.py.
+🎯 Master Progress Roadmap
+ 1. Environment: Create & activate venv.
+ 2. Install: pip install django djangorestframework.
+ 3. Scaffold: Run startproject and startapp commands.
+ 4. Register: Add "rest_framework" and "reservations" to settings.py.
+ 5. Models: Define Room and Booking tables in models.py.
+ 6. Track Plan: Run makemigrations in the terminal sandbox.
+ 7. Migrate: Execute migrate to physically construct tables.
+ 8. Serializers Structure: Map models to base classes inside serializers.py.
+ 9. Custom Validation: Code time-overlap checks inside serializers.py.
+ 10. View Endpoints: Configure request controllers inside views.py.
+ 11. App Routing: Define target application endpoints in reservations/urls.py.
+ 12. Main Routing: Wire app entry gateways into config/urls.py.
+🧪 Testing & Completion
+ 13. Start the Django development server.
+ 14. Test the API and confirm the endpoints respond correctly.
+ 15. Test creating a Room.
+ 16. Test creating a Booking.
+ 17. Test invalid time ranges are rejected.
+ 18. Test overlapping bookings are rejected.
+ 19. Test retrieving Rooms and Bookings.
+ 20. Test updating and deleting a Booking.
+ 21. Review and clean up the project structure/code.
+ 22. Update the README with setup and usage instructions.
+ 23. Git status / review changes.
+ 24. Commit the completed project to Git.
+ 25. Push the finished project to GitHub.

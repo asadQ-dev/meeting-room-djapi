@@ -1,5 +1,5 @@
 
-from rest_framework import serializers
+from rest_framework import serializers  # type: ignore[reportMissingImports]
 from .models import Room, Booking
 
 class RoomSerializer(serializers.ModelSerializer):
