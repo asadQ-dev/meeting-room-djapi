@@ -13,16 +13,24 @@ class BookingSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     def validate(self, data):
-        if data['start_time'] >= data['end_time']:
+        start = data.get('start_time', getattr(self.instance, 'start_time', None))
+        end = data.get('end_time', getattr(self.instance, 'end_time', None))
+        room = data.get('room', getattr(self.instance, 'room', None))
+
+        if start >= end:
             raise serializers.ValidationError("End time must be after start time.")
 
-        room = data['room']
         overlapping = Booking.objects.filter(
             room=room,
-            start_time__lt=data['end_time'],
-            end_time__gt=data['start_time']
+            start_time__lt=end,
+            end_time__gt=start,
         )
+        if self.instance:
+            overlapping = overlapping.exclude(pk=self.instance.pk)
+
         if overlapping.exists():
-            raise serializers.ValidationError("This room is already booked for the specified time interval.")
+            raise serializers.ValidationError(
+                "This room is already booked for the specified time interval."
+            )
 
         return data
