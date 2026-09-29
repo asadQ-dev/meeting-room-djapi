@@ -1,8 +1,16 @@
 from .models import Room, Booking
-from rest_framework.test import APITestCase
-from rest_framework import status
-from rest_framework.response import Response
+from rest_framework.test import APITestCase # type: ignore
+from rest_framework import status # type: ignore
+from rest_framework.response import Response # type: ignore
 
+class RoomAPITestCase(APITestCase):
+    def setUp(self):
+        self.room = Room.objects.create(name="Conference Room", capacity=10)
+
+    def test_room_creation(self):
+        self.assertEqual(self.room.name, "Conference Room")
+        self.assertEqual(self.room.capacity, 10)
+        
 class BookingAPITestCase(APITestCase):
     def setUp(self):
         self.room = Room.objects.create(name="Conference Room", capacity=10)
