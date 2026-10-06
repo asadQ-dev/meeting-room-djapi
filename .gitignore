@@ -46,3 +46,6 @@ media/
 .env
 .secret
 .secret.env
+
+# Personal notes, not for public repo
+docs/reservation-room-workflow.md

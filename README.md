@@ -21,7 +21,6 @@ A small Django REST Framework API for booking meeting rooms, built as a training
 ```
 config/              # Django project: settings, root URLConf, WSGI/ASGI
 reservations/         # App: models, serializers, views, urls, tests
-docs/                 # Build/runbook notes from building this project
 manage.py
 requirements.txt
 ```
@@ -130,7 +129,6 @@ Booking creation/updates fail with `400 Bad Request` if `end_time` is not after 
 
 - Permissions are set to `AllowAny` for all viewsets (see `REST_FRAMEWORK` in [config/settings.py](config/settings.py)) — there is no authentication, so this is not suitable to deploy as-is.
 - `DEBUG = True` and `ALLOWED_HOSTS` is empty — fine for local development only.
-- See [docs/reservation-room-workflow.md](docs/reservation-room-workflow.md) for the step-by-step build log of how this project was scaffolded, which is useful if you're following along to learn the same architecture.
 
 ## Potential Improvements
 
