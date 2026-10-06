@@ -45,3 +45,4 @@ media/
 # Sensitive files
 .env
 .secret
+.secret.env

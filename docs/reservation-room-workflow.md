@@ -151,19 +151,19 @@ python manage.py migrate
 14. [x] Test the API and confirm the endpoints respond correctly. (Covered by the automated tests in `reservations/tests.py`.)
 16. [x] Test creating a Booking.
 18. [x] Test overlapping bookings are rejected.
-20. [ ] Test updating a Booking. (PUT and PATCH both covered.)
+20. [x] Test updating a Booking. (PUT and PATCH both covered.)
 
 ### ⬜ Remaining
 
-15. [ ] Test creating a Room.
-17. [ ] Test invalid time ranges are rejected. (Validation exists in the serializer; no test yet.)
-19. [ ] Test retrieving Rooms and Bookings.
-21. [ ] Test deleting a Booking.
-22. [ ] Review and clean up the project structure/code.
-23. [ ] Update the README with setup and usage instructions.
-24. [ ] Git status / review changes.
-25. [ ] Commit the completed project to Git.
-26. [ ] Push the finished project to GitHub. (Before pushing: move `SECRET_KEY` out of `settings.py`.)
+15. [x] Test creating a Room.
+17. [x] Test invalid time ranges are rejected. (Validation exists in the serializer; no test yet.)
+19. [x] Test retrieving Rooms and Bookings.
+21. [x] Test deleting a Booking.
+22. [x] Review and clean up the project structure/code.
+23. [x] Update the README with setup and usage instructions.
+24. [x] Git status / review changes.
+25. [x] Commit the completed project to Git.
+26. [] Push the finished project to GitHub. (Before pushing: move `SECRET_KEY` out of `settings.py`.)
 
 ---
 
